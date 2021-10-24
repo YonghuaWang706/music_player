@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <title>二次元播放机</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href=https://yoursmiles.org/ismile/anime/oikkwn0101.png
+          type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webpage showcasing various types of music artists">
+</head>
+<body>
+<h1>hello</h1>
+
+<script src="/public/js/scripts.js" defer></script>
+<link href="/public/css/style.css" rel="stylesheet">
+<h1 id='title'>Welcome!</h1>
+<!--<audio id="myAudio" autoplay>audio-->
+<!--    <source src="/public/music/SOUND_OF_DISTINY.mp3" type="audio/ogg">-->
+<!--    <source src="/public/music/SOUND_OF_DISTINY.mp3" type="audio/mpeg">-->
+<!--    Your browser does not support the audio element.</audio>-->
+<div id='overlay'>
+    <div id='instructionsForm'>
+        <h2>Instructions</h2>
+        <p>
+            又到了白色相簿的季节.
+            点击下方的play按钮开始聆听!
+        </p>
+        <h3>Change Song</h3>
+        <p>
+            Choose whatever song you like to listen from the songs listed.
+        </p>
+        <h3>Change Color</h3>
+        <p>
+            Change the color of the audio wave from the options provided.
+        </p>
+        <h3>Settings</h3>
+        <p>
+            Allows you to play, pause, loop, mute, change the volume of the song and shows current song playing.
+        </p>
+        <button id="play">Play</button>
+    </div>
+</div>
+<div id='content'>
+    <h1>Let's Vibe</h1>
+    <div id="player">
+        <div id='options'>
+            <div id='songs'>
+
+                <label id='songList'>Song List</label>
+                <div></div>
+                <input type="button" id="whiteAlbum" class="song" value="White Album">
+                <div></div>
+                <input type="button" id="soundOfDestiny" class="song" value="Sound of destiny">
+                <div></div>
+                <input type="button" id="dontSayLazy" class="song" value="Don't say lazy!">
+                <div></div>
+                <input type="button" id="loveWar" class="song" value="Love is War!">
+                <div></div>
+            </div>
+            <div id="changeColors">
+                <label id='colors'>Colors</label>
+                <button id="default" class='colorBtn'>Default</button>
+                <button id="redGradient" class='colorBtn'>Red</button>
+                <button id="greenGradient" class='colorBtn'>Green</button>
+                <button id="blueGradient" class='colorBtn'>Blue</button>
+                <button id="purpleGradient" class='colorBtn'>Purple</button>
+            </div>
+        </div>
+        <div id='settingsDiv'>
+            <label id='settingsLabel'>Settings</label>
+            <div id='settings'>
+                <div></div>
+                <button id='playSet'class= 'setBtn'>Play</button>
+                <div></div>
+                <button id='pause' class= 'setBtn'>Pause</button>
+                <div></div>
+                <label class= 'setLabels'>Volume</label>
+                <input type="range" min= '0' max= '100' value= '100' step= '1' id="volume">
+                <div></div>
+                <label class= 'setLabels'>Mute</label>
+                <input type='checkbox' class= 'checkBox' id= 'mute'>
+                <div></div>
+                <label class= 'setLabels'>Loop</label>
+                <input type="checkbox" class= 'checkBox' id= 'loop'>
+                <div></div>
+                <label class= 'setLabels'>Playing: </label>
+                <input type="text" id= 'currentSong'>
+            </div>
+        </div>
+        <div id="canvasDiv">
+            <canvas id="canvas" width="500" height="528"></canvas>
+        </div>
+    </div>
+</div>
+</body>
+</html>
